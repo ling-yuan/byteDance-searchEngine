@@ -76,7 +76,7 @@ def get_resp(start_date, end_date, search_key):
 if __name__ == '__main__':
     keyword_list = ['新能源汽车', '新能源车', '新能源电动汽车', '比亚迪', '充电桩', '小鹏', '凌宝', '奇瑞', '特斯拉', '老年代步车', '锂电池', '雷丁芒果', '蔚来', '动力电池', '燃油车', '金彭', '奇瑞小蚂蚁', '低速电动汽车', '哪吒汽车', '威马', '续航', '北汽', '网约车', '电动四轮车', '汽车人']
 
-    for (start_date, end_date) in get_month([2024, 2, 29]):
+    for (start_date, end_date) in get_month([2024, 2, 29], [2020, 12]):
         s = "%4d%02d%02d" % start_date
         e = "%4d%02d%02d" % end_date
         print(s, e)
